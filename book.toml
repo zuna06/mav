@@ -1,9 +1,23 @@
 [book]
+title = "The Rust book for Drones"
 authors = ["The AeroRust community <aerospace.rust@gmail.com>"]
+description = "Build and deploy drone technologies using Rust"
+
 language = "en"
 multilingual = false
 src = "drone-book"
-title = "The Rust book for Drones"
+
+[rust]
+# individual code blocks can append `,edition20XX` to use other editione.g.:
+# ```rust,edition2015
+edition = "2018"
+
+[output.html]
+smart-punctuation = true
+git-repository-url = "https://github.com/AeroRust/mav/tree/main/drone-book"
+git-repository-icon = "fa-github"
+# site-url = ??? the documentation: The url where the book will be hosted. This is required to ensure navigation links and script/css imports in the 404 file work correctly, even when accessing urls in subdirectories. Defaults to /. If site-url is set, make sure to use document relative links for your assets, meaning they should not start with /.
 
 [build]
 build-dir = "drone-book/book"
+create-missing = false
