@@ -9,7 +9,8 @@ Operating system: Linux / MacOS(?)
 
 (?) - Currently being tested
 
-- Docker and Docker-compose for simulation (Install [Docker][install-docker] & [docker-compose][install-docker-compose])
+- Docker for simulation (Install [Docker][install-docker])
+- Docker Compose for simulation (Install [Docker Compose][install-docker-compose])
 - Rust for `cargo run` (Install the [Rust][install-rust] programming language)
 - Git
 - `ssh` key set on your GitHub profile, see [Connecting to GitHub with SSH][github-ssh]
@@ -23,11 +24,11 @@ Operating system: Linux / MacOS(?)
     1.2. `git submodule init && git submodule update`
 
 
-2. Run PX4, Gazebo and MAVSDK Server with `docker-compose`
+2. Run PX4, Gazebo and MAVSDK Server with `docker compose`
 
 
 ```
-docker-compose up --detach
+docker compose up --detach
 ```
 
 **Tools:** `PX4` (autopilot), `Gazebo` (a tool for simulations) and `MAVSDK` server are all open-source tools and later we will get to know what each tool does.
