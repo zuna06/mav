@@ -10,7 +10,7 @@ src = "drone-book"
 [rust]
 # individual code blocks can append `,edition20XX` to use other editione.g.:
 # ```rust,edition2015
-edition = "2018"
+edition = "2021"
 
 [output.html]
 smart-punctuation = true
